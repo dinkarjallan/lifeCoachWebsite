@@ -1,6 +1,6 @@
 /* styles for main tag */
 main{
-    width: 100vw;
+    width: 100%;
     min-height: 92vh;
     background-color: #c4c4c4;
     padding: 70px
