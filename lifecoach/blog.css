@@ -1,6 +1,6 @@
-/* body templating */
+/* blog section templating */
 /* ****************DONOT TOUCH THIS************* */
-section.body{
+section.blog{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto 35% 35% ;
@@ -48,7 +48,7 @@ article.card:nth-of-type(even){
 /* styles here */
 
 /* header styles */
-section.body{
+section.blog{
     width: 100%;
     min-height: 100vh;
 }
