@@ -1,0 +1,118 @@
+/* about section templating selectors */
+/* *********** DONOT TOUCH THIS CODE **************** */
+/* introduction layout */
+section.container {
+    width: 100%;
+    min-height: 190vh;
+}
+article.about {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    /* min-height: 100vh; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+div.about-title {
+    /* border: 2px dotted black; */
+    grid-area: 1 / 1 / 2 / 3;
+}
+div.about-content {
+    grid-area: 2 / 1 / 4 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+div.txt {
+    /* border: 2px dotted black; */
+    grid-area: 1 / 1 / 2 / 2;
+}
+div.img {
+    /* border: 2px dotted black; */
+    grid-area: 1 / 2 / 2 / 3;
+}
+/* services layout */
+article.all-services {
+    /* border: 2px dotted black; */
+    width: 80%;
+    margin: 14vh auto 0 auto;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 33.33%);
+    grid-column-gap: 0px;
+}
+div.service:nth-of-type(1) {
+    grid-area: 1 / 1 / 2 / 2;
+    /* border: 2px dashed gray; */
+}
+div.service:nth-of-type(2) {
+    grid-area: 2 / 1 / 3 / 2;
+    /* border: 2px dashed gray; */
+}
+div.service:nth-of-type(3) {
+    grid-area: 3 / 1 / 4 / 2;
+    /* border: 2px dashed gray; */
+}
+div.service:nth-of-type(even){
+    justify-self: end;
+}
+/* ****************till here************** */
+/* introduction styles */
+div.about-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+div.about-title h2 {
+    font-size: 3em;
+    font-weight: 700;
+}
+div.about-content div.txt {
+    padding: 0 10%;
+    line-height: 2em;
+    font-size: 18px;
+    overflow-y: auto;
+}
+div.img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+div.img div.item {
+    width: 70%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 25px;
+}
+
+
+/* services styles */
+div.service {
+    /* background-color: skyblue; */
+    width: 50%;
+    font-size: 18px;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+div.service div.img {
+    display: inline-block;
+    width: 25%;
+    height: 65%;
+    background-color: gray;
+    border-radius: 100%;
+}
+div.service div.caption {
+    display: inline-block;
+    width: 70%;
+    margin-left: 5%;
+}
