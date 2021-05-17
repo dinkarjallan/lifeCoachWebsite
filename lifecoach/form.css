@@ -1,0 +1,65 @@
+/* ******************newsletter section***************** */
+section.form {
+    width: 100%;
+    height: 100vh;
+}
+section.form h2.title {
+    /* background-color: #8a2be2; */
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3.5em;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+section.form p.subtitle {
+    /* background-color: #8a2be2; */
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+section.form form.signup {
+    border: 2px solid grey;
+    border-radius: 35px;
+    padding: 3%;
+    width: 40%;
+    height: 60%;
+    margin: 2em auto 0 auto;
+
+}
+form.signup h3 {
+    text-transform: capitalize;
+    font-size: 32px;
+    line-height: 2em;
+}
+form.signup input {
+    /* line-height: 2em; */
+    padding: 1em;
+    width: 47%;
+    border-radius: 25px;
+    border: 2px solid grey;
+    outline: none;
+}
+form.signup input.firstname {
+    margin-right: 5%;
+    margin-top: 5%;
+}
+form.signup input.lastname {
+    margin-top: 5%;
+}
+form.signup input.email {
+    width: 100%;
+    margin: 5% auto;
+}
+form.signup button.join {
+    text-transform: capitalize;
+    padding: 1em;
+    width: 25%;
+    border-radius: 25px;
+    border: 2px solid grey;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
