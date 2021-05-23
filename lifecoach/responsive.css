@@ -1,0 +1,250 @@
+/* for viewports lesser than 1024px */
+
+
+@media only screen and (max-width:1030px) {
+/* the header (main) section */
+    main{
+        padding: 50px;
+    }
+    main div.content p.text {
+        max-width: 55vw;
+    }
+/* the blog section */
+    article.card {
+        height: 90%;
+    }
+    section.blog {
+        column-gap: 1%;
+        min-height: 120vh;
+    }
+    div.header h2 {
+        width: 80%;
+    }
+/* the about section  */
+    div.img {
+        align-items: flex-start;
+    }
+    div.img div.item {
+        width: 100%;
+        height: 100%;
+    }
+    div.about-content div.txt {
+        line-height: 1.7em;
+        font-size: 16px;
+    }
+    /* services article */
+    article.all-services {
+        margin: 10vh auto 0 auto;
+    }
+    div.service {
+        width: 65%;
+        font-size: 16px;
+        line-height: 1.7em;
+    }
+/* the form section */
+    section.form {
+        height: 130vh;
+        padding-top: 10vh;
+    }
+    section.form h2.title {
+        max-width: 70%;
+    }
+    section.form p.subtitle {
+        max-width: 70%;
+    }
+    section.form form.signup {
+        width: 65%;
+        height: 45%;
+        margin: 5em auto 0 auto;
+    }
+}
+
+
+/* for viewport size lesser than 768px */
+@media only screen and (max-width: 768px) {
+/* the header (main) section  */
+    div.header h2 {
+        width: 100%;
+        margin: 0 2%;
+        font-size: 2.7em;
+    }
+    main div.content p.text {
+        font-size: 18px;
+    }
+/* the blog section */
+    section.blog {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+    }
+    div.header {
+        grid-area: 1 / 1 / 2 / 3;
+        justify-self: center;
+        height: 100%;
+        padding: 2% 2%;
+    }
+    article.card:nth-of-type(1) {
+        grid-area: 2 / 1 / 3 / 3;
+        justify-self: center;
+        height: 100%; 
+        padding: 2% 2%;
+    }
+    article.card:nth-of-type(2) {
+        grid-area: 3 / 1 / 4 / 3;
+        justify-self: center;
+        height: 100%;
+        padding: 2% 2%;
+    }
+    article.card:nth-of-type(3) {
+        grid-area: 4 / 1 / 5 / 3;
+        justify-self: center;
+        height: 100%;
+        padding: 2% 2%;
+    }
+    article.card:nth-of-type(4) {
+        grid-area: 5 / 1 / 6 / 3;
+        justify-self: center;
+        height: 100%;
+        padding: 2% 2%;
+    }
+/* the about section */
+    article.about {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: .7fr 1.5fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    div.about-title {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    div.about-content {
+        grid-area: 2 / 1 / 4 / 2;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1.5fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    div.img {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 60%;
+        height: 90%;
+        justify-self: center; 
+    }
+    div.txt {
+        grid-area: 2 / 1 / 3 / 2;
+        /* column-count: 2;
+        column-gap: 10px; */
+    }
+    article.all-services {
+        margin: 5vh auto 0 auto;
+    }
+    div.service {
+        width: 85%;
+    }
+    div.service:nth-of-type(odd) {
+        justify-self: center;
+    }
+    div.service:nth-of-type(even) {
+        justify-self: center;
+        flex-direction: row-reverse;
+    }
+/* the newsletter section */
+    section.form h2.title {
+        max-width: 95%;
+        font-size: 3em;
+    }
+    section.form p.subtitle {
+        max-width: 90%;
+    }
+/* footer section */
+    footer.footer {
+        flex-direction: column;
+        height: 45vh;
+    }
+}
+
+
+/* for viewport size lesser than 400px */
+@media only screen and (max-width: 400px) {
+/* the header(main) section */
+    main div.content h1.head {
+        font-size: 3rem;
+        line-height: 1em;
+    }
+    main div.content p.text {
+        font-size: 16px;
+    }
+/* the blog section  */
+    div.header h2 {
+        font-size: 2.5em;
+    }
+    article.card p.description {
+        line-height: 1.5em;
+        font-size: .9em;
+    }
+/* the about section */
+    article.about {
+        grid-template-rows: .5fr 1fr 1fr;
+    }
+    div.about-title h2 {
+        font-size: 2.5em;
+    }
+    div.about-content {
+        grid-template-rows: .7fr 1fr;
+    }
+    div.img {
+        width: 100%;
+        height: 90%;
+    }
+    /* services */
+    article.all-services {
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 40px;
+    }
+    div.service {
+        width: 100%;
+    }
+    div.service div.img {
+        width: 50%;
+    }
+    div.service div.caption {
+        line-height: 1.5em;
+        font-size: 14px;
+        width: 50%;
+    }
+/* the newsletter section */
+    section.form h2.title {
+        font-size: 2.5em;
+        line-height: 1.7em;
+    }
+    section.form p.subtitle {
+        font-size: 16px;
+    }
+    section.form form.signup {
+        margin: 2.5em auto 0 auto;
+        width: 75%;
+    }
+    form.signup h3 {
+        text-align: center;
+    }
+    form.signup input {
+        width: 100%;
+    }
+    form.signup button.join {
+        width: 50%;
+        margin: 0 25%;
+    }
+/* the footer section */
+    footer.footer {
+        height: 70vh;
+    }
+    footer.footer ul.links {
+        flex-direction: column;
+        align-items: center;
+        height: 40%;
+    }
+}
